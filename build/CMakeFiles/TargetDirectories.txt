@@ -1,3 +1,0 @@
-/home/sandesh/Documents/git/ElVis/build/CMakeFiles/ElVis.dir
-/home/sandesh/Documents/git/ElVis/build/CMakeFiles/edit_cache.dir
-/home/sandesh/Documents/git/ElVis/build/CMakeFiles/rebuild_cache.dir
