@@ -2,20 +2,21 @@
 #define VISUALIZER
 
 #include <SFML/Graphics.hpp>
+#include <iostream>
 #include <SFML/Window.hpp>
 
 class Visualizer
 {
 public:
-    Visualizer() {
-        window.create(sf::VideoMode(800, 600), "ElVis The algorithm visualizer.");
-        width = 800;
-        height = 600;
+    Visualizer(sf::RenderWindow& window) : window(window) {
+        width = window.getSize().x;
+        height = window.getSize().y;
     }
-
-    virtual void draw() = 0;
+    // virtual void intialize() = 0;
+    virtual void update() = 0;
+    virtual void draw(std::vector<int>& data) = 0;
 protected:
-    sf::RenderWindow window;
+    sf::RenderWindow& window;
     unsigned int width, height;
 };
 

@@ -5,10 +5,12 @@
 
 class SortVis : Visualizer {
 public:
-    SortVis(std::vector<int>& data) : data_ptr{data} {}
-    void draw() override ;
+    SortVis(sf::RenderWindow& window) : Visualizer(window) {}
+    // void initialize() override;
+    void update() override;
+    void draw(std::vector<int>& data) override ;
 private:
-    std::vector<int>& data_ptr;
+    // std::vector<int>& data_ptr;
 };
 
 #endif

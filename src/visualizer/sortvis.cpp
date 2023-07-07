@@ -2,21 +2,20 @@
 #include <bits/stdc++.h>
 
 
-void SortVis::draw() {
+void SortVis::update () {
+    sf::Event event;
+    while (window.pollEvent(event)) {
+        if (event.type == sf::Event::Closed) {
+            window.close();
+        }
+    }
+}
+
+void SortVis::draw(std::vector<int>& data_ptr) {
     unsigned int max = *max_element(data_ptr.begin(), data_ptr.end());
     unsigned int len = data_ptr.size();
 
-        const float columnWidth = static_cast<float>(width) / len;
-
-    while (window.isOpen())
-    {
-        sf::Event event;
-        while (window.pollEvent(event))
-        {
-            if (event.type == sf::Event::Closed)
-                window.close();
-        }
-
+    const float columnWidth = static_cast<float>(width) / len;
         // Clear the window
         window.clear();
 
@@ -36,6 +35,4 @@ void SortVis::draw() {
 
         // Display the contents of the window
         window.display();
-    }
-
 }
