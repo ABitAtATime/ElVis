@@ -7,10 +7,11 @@ class Bubble
 {
 public:
     Bubble(SortVis& visualizer) : visualizer(visualizer) {
-        data = std::vector<int> {4, 3, 2, 5, 10, 12, 14, 17, 1, 3, 5, 2, 6, 9};
+        generateRandomData(300, 1, 150);
     }
     void run() ;
 private:
+    void generateRandomData(size_t dataSize, int minVal, int maxVal);
     std::vector<int> data;
     SortVis& visualizer;
 };

@@ -2,7 +2,7 @@
 #include <iostream>
 #include <chrono>
 #include <thread>
-
+#include <random>
 void Bubble::run()  {
     // std::cout << "test\n";
     for (auto left = data.begin(); left != data.end() - 1; ++left ) {
@@ -15,11 +15,23 @@ void Bubble::run()  {
             }
             visualizer.update();
             visualizer.draw(data);
-            std::this_thread::sleep_for(std::chrono::milliseconds(40));
+            // std::this_thread::sleep_for(std::chrono::milliseconds(10));
+            // std::this_thread::sleep_for(std::chrono::milliseconds(10));
         }
     }
-    for (auto x : data ) {
-        std::cout << x << ", ";
-    }
-    std::cout << std::endl;
 }
+
+void Bubble::generateRandomData(size_t dataSize, int minVal, int maxVal) {
+        // Clear existing data
+        data.clear();
+
+        // Random number generator
+        std::random_device rd;
+        std::mt19937 gen(rd());
+        std::uniform_int_distribution<int> distribution(minVal, maxVal);
+
+        // Generate random data
+        for (size_t i = 0; i < dataSize; ++i) {
+            data.push_back(distribution(gen));
+        }
+    }
