@@ -7,7 +7,9 @@ include_directories(include)
 
 set(SOURCES
     src/main.cpp
-    src/sorting/bubble.cpp
+    src/ElVis.cpp
+    src/algorithm/sorting/Sorting.cpp
+    src/algorithm/sorting/bubble.cpp
     src/visualizer/sortvis.cpp
 )
 

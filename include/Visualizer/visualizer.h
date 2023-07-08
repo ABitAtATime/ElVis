@@ -5,19 +5,21 @@
 #include <iostream>
 #include <SFML/Window.hpp>
 
+
 class Visualizer
 {
 public:
-    Visualizer(sf::RenderWindow& window) : window(window) {
-        width = window.getSize().x;
-        height = window.getSize().y;
+    Visualizer(sf::RenderWindow& windowref) : mwindowref(windowref) {
+        mwinwidth = mwindowref.getSize().x;
+        mwinheight = mwindowref.getSize().y;
     }
     // virtual void intialize() = 0;
     virtual void update() = 0;
-    virtual void draw(std::vector<int>& data) = 0;
+    virtual void draw() = 0;
+    virtual void initialize() = 0;
 protected:
-    sf::RenderWindow& window;
-    unsigned int width, height;
+    sf::RenderWindow& mwindowref;
+    unsigned int mwinwidth, mwinheight;
 };
 
 

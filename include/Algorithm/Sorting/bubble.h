@@ -1,19 +1,17 @@
 #ifndef BUBBLE
 #define BUBBLE
 
-#include "Visualizer/sortvis.h"
 
-class Bubble
+#include "Algorithm/Sorting/sorting.h"
+
+
+class Bubble : public Sorting
 {
 public:
-    Bubble(SortVis& visualizer) : visualizer(visualizer) {
-        generateRandomData(300, 1, 150);
+    Bubble(unsigned int datasize, sf::RenderWindow& window) : Sorting(datasize, window) {
+        randomData();
     }
-    void run() ;
-private:
-    void generateRandomData(size_t dataSize, int minVal, int maxVal);
-    std::vector<int> data;
-    SortVis& visualizer;
+    void run() override ;
 };
 
 #endif
