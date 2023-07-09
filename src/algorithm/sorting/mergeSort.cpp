@@ -31,7 +31,7 @@ void MergeSort::merge(int low, int mid, int high)
         {
             mdata[k] = arr2[j++];
         }
-    std::this_thread::sleep_for(std::chrono::milliseconds(1));
+    // std::this_thread::sleep_for(std::chrono::milliseconds(1));
         visualizer.update();
         visualizer.draw();
     }
