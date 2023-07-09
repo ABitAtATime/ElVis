@@ -1,8 +1,6 @@
 #include "Algorithm/Sorting/bubble.h"
 #include <iostream>
-#include <chrono>
-#include <thread>
-#include <random>
+
 void Bubble::run()  {
     // std::cout << "test\n";
     for (auto left = mdata.begin(); left != mdata.end() - 1; ++left ) {

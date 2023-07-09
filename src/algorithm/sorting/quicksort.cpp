@@ -1,8 +1,8 @@
 #include "Algorithm/Sorting/quicksort.h"
 #include <iostream>
-#include <chrono>
-#include <thread>
-#include <random>
+// #include <chrono>
+// #include <thread>
+// #include <random>
 
 
 int Quicksort::partition(int low , int high)
@@ -18,8 +18,8 @@ int Quicksort::partition(int low , int high)
             mdata[j] = mdata[i];
             mdata[i] = temp;
         }
-        visualizer.draw();
         visualizer.update();
+        visualizer.draw();
         
     }
         auto temp = mdata[i+1];
