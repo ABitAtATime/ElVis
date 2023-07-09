@@ -3,18 +3,32 @@
 ## Planning and Design
 - [o] define goals and objectives
 - [o] determine the algorithms
-- [ ] plan the structure visualizer
+- [o] plan the structure visualizer
 
 ## Setup and Environment
 - [o] setup dev environnent, setup vcs
-- [ ] setup necessary deps
+- [o] setup necessary deps
 
 ## Project Structure
-- [ ] setup directory structure
+- [o] setup directory structure
 
 ## Algorithms
-
-## Visual logics
+ - Sorting
+    - [o] Bubble
+    - [ ] Merge
+    - [ ] Quick
+    - [ ] Selection
+    - [ ] Insertion
+    - [ ] Radix Sort
+    - [ ] Heap Sort
+ - Pathfinding
+    - [ ] BFS
+    - [ ] DFS
+    - [ ] A star
+    - [ ] Dijkstra
 
 ## UI Interface and Controls
-
+- [ ] Base UI
+- [ ] Backgrounds
+- [ ] Color pallete
+- [ ] 
