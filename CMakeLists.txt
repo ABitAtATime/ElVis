@@ -10,6 +10,7 @@ set(SOURCES
     src/ElVis.cpp
     src/algorithm/sorting/Sorting.cpp
     src/algorithm/sorting/bubble.cpp
+    src/algorithm/sorting/quicksort.cpp
     src/visualizer/sortvis.cpp
 )
 
