@@ -1,12 +1,16 @@
 cmake_minimum_required(VERSION 3.12)
 project(ElVis)
 
-set(CMAKE_CXX_STANDRAD 17)
+set(CMAKE_CXX_STANDARD 17)
 
 include_directories(include)
 
 set(SOURCES
     src/main.cpp
+    src/ElVis.cpp
+    src/algorithm/sorting/Sorting.cpp
+    src/algorithm/sorting/bubble.cpp
+    src/visualizer/sortvis.cpp
 )
 
 find_package(SFML 2.5 COMPONENTS audio graphics window system REQUIRED)
