@@ -24,31 +24,31 @@ int main()
     sf::RenderWindow window(sf::VideoMode(1800, 1000), "ElVis");
     if (input == 1)
     {
-        Bubble placeholder(100, window);
+        Bubble placeholder(1000, window);
         ElVis elvis(window, placeholder);
         elvis.run();
     }
     else if (input == 2)
     {
-        MergeSort placeholder(2000, window);
+        MergeSort placeholder(1000, window);
         ElVis elvis(window, placeholder);
         elvis.run();
     }
     else if (input == 3)
     {
-        Quicksort placeholder(2000, window);
+        Quicksort placeholder(1000, window);
         ElVis elvis(window, placeholder);
         elvis.run();
     }
     else if (input == 4)
     {
-        SelectionSort placeholder(2000, window);
+        SelectionSort placeholder(1000, window);
         ElVis elvis(window, placeholder);
         elvis.run();
     }
     else if (input == 5)
     {
-        InsertionSort placeholder(2000, window);
+        InsertionSort placeholder(1000, window);
         ElVis elvis(window, placeholder);
         elvis.run();
     }
