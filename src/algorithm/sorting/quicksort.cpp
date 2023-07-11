@@ -1,14 +1,13 @@
 #include "Algorithm/Sorting/quicksort.h"
 #include <iostream>
 
-
-int Quicksort::partition(int low , int high)
+int Quicksort::partition(int low, int high)
 {
     int pivot = mdata[high];
-    int i = low -1;
-    for ( int j = low ; j<=high-1 ; j++)
+    int i = low - 1;
+    for (int j = low; j <= high - 1; j++)
     {
-        if(mdata[j] < pivot )
+        if (mdata[j] < pivot)
         {
             i++;
             auto temp = mdata[j];
@@ -17,30 +16,25 @@ int Quicksort::partition(int low , int high)
         }
         visualizer.update();
         visualizer.draw();
-        
     }
-        auto temp = mdata[i+1];
-        mdata[i+1] = mdata[high];
-        mdata[high] = temp; 
-    return (i+1);
-
+    auto temp = mdata[i + 1];
+    mdata[i + 1] = mdata[high];
+    mdata[high] = temp;
+    return (i + 1);
 }
 
-void Quicksort::quicksort(int low , int high)
+void Quicksort::quicksort(int low, int high)
 {
     if (low < high)
     {
-        auto pivotpos = partition(low , high);
+        auto pivotpos = partition(low, high);
 
-
-        quicksort(low , pivotpos-1);
-        quicksort(pivotpos+1,high);
+        quicksort(low, pivotpos - 1);
+        quicksort(pivotpos + 1, high);
     }
 }
 
-void Quicksort::run()  {
-    quicksort(0 , mdata.size());
-    
-
-
+void Quicksort::run()
+{
+    quicksort(0, mdata.size());
 }
