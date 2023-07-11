@@ -13,7 +13,7 @@ public:
     }
     void run() override ;
     int partition(int , int);
-    void quicksort(int low , int high);
+    void quicksort(int , int);
 };
 
 #endif

@@ -12,6 +12,8 @@ set(SOURCES
     src/algorithm/sorting/bubble.cpp
     src/algorithm/sorting/quicksort.cpp
     src/algorithm/sorting/mergeSort.cpp
+    src/algorithm/sorting/selectionsort.cpp
+
     src/visualizer/sortvis.cpp
 )
 
