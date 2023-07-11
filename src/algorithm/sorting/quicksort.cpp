@@ -1,8 +1,5 @@
 #include "Algorithm/Sorting/quicksort.h"
 #include <iostream>
-// #include <chrono>
-// #include <thread>
-// #include <random>
 
 
 int Quicksort::partition(int low , int high)
@@ -42,7 +39,7 @@ void Quicksort::quicksort(int low , int high)
 }
 
 void Quicksort::run()  {
-    quicksort(0 , mdataSize);
+    quicksort(0 , mdata.size());
     
 
 

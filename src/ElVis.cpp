@@ -1,7 +1,6 @@
 #include "ElVis.h"
 
 void ElVis::run() {
-    std::cout << "test" << std::endl;
     malgorithm.run();
     while (mwindow.isOpen()) {
         sf::Event event;
