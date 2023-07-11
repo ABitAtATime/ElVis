@@ -13,6 +13,8 @@ set(SOURCES
     src/algorithm/sorting/quicksort.cpp
     src/algorithm/sorting/mergeSort.cpp
     src/algorithm/sorting/selectionsort.cpp
+    src/algorithm/sorting/insertionsort.cpp
+
 
     src/visualizer/sortvis.cpp
 )
