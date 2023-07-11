@@ -7,7 +7,7 @@ void Sorting::randomData() {
 
         std::random_device rd;
         std::mt19937 gen(rd());
-        std::uniform_int_distribution<int> distribution(0, 1000);
+        std::uniform_int_distribution<int> distribution(0, 5000);
 
         for (size_t i = 0; i < mdataSize; ++i) {
             mdata.push_back(distribution(gen));
