@@ -21,7 +21,7 @@ int main()
     std::cout << "\n";
     std::cout << "Enter your Choice:    ";
     std::cin >> input;
-    sf::RenderWindow window(sf::VideoMode(1000, 540), "ElVis");
+    sf::RenderWindow window(sf::VideoMode(1820, 990), "ElVis");
     if (input == 1)
     {
         Bubble placeholder(1000, window);
