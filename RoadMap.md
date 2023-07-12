@@ -15,12 +15,12 @@
 ## Algorithms
  - Sorting
     - [o] Bubble
-    - [ ] Merge
-    - [ ] Quick
-    - [ ] Selection
-    - [ ] Insertion
+    - [o] Merge
+    - [o] Quick
+    - [o] Selection
+    - [o] Insertion
     - [ ] Radix Sort
-    - [ ] Heap Sort
+    - [o] Heap Sort
  - Pathfinding
     - [ ] BFS
     - [ ] DFS
