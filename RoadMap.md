@@ -20,7 +20,7 @@
     - [o] Selection
     - [o] Insertion
     - [ ] Radix Sort
-    - [ ] Heap Sort
+    - [o] Heap Sort
  - Pathfinding
     - [ ] BFS
     - [ ] DFS

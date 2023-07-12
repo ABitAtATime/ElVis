@@ -53,7 +53,7 @@ ElVis is a C++ project aimed at visualizing various algorithms using the SFML (S
 - Quick Sort ✓
 - Selection Sort ✓
 - Insertion Sort ✓
-- Heap Sort 
+- Heap Sort ✓
 - Radix Sort 
 ### Pathfinding Algorithms
 - Breadth-First Search (BFS) NYI
