@@ -52,7 +52,7 @@ int main()
     }
     else if (input == 5)
     {
-        InsertionSort placeholder(1000, window);
+        InsertionSort placeholder(10000, window);
         ElVis elvis(window, placeholder);
         elvis.run();
     }

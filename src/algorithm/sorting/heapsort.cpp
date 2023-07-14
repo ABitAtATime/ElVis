@@ -21,6 +21,8 @@ void HeapSort::Heapify(int N, unsigned int i)
 
         HeapSort::Heapify(N, largest);
     }
+    visualizer.draw();
+    visualizer.update();
 }
 void HeapSort::heapSort()
 {
@@ -33,8 +35,7 @@ void HeapSort::heapSort()
         auto temp = mdata[0];
         mdata[0] = mdata[i];
         mdata[i] = temp;
-        visualizer.draw();
-        visualizer.update();
+
         HeapSort::Heapify(i, 0);
     }
 }

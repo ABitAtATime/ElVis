@@ -11,7 +11,7 @@ public:
     {
         randomData();
     }
-    void insertionsort(int);
+    void insertionsort();
     void run() override;
 };
 
