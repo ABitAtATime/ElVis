@@ -6,6 +6,8 @@
 #include "Algorithm/Sorting/insertionsort.h"
 #include "Algorithm/Sorting/heapsort.h"
 #include "Algorithm/Sorting/bubble.h"
+#include "Algorithm/Sorting/radixsort.h"
+
 
 int main()
 {
@@ -18,6 +20,7 @@ int main()
     std::cout << "4 --- Selection Sort" << std::endl;
     std::cout << "5 --- Insertion Sort" << std::endl;
     std::cout << "6 --- Heap Sort" << std::endl;
+        std::cout << "7 --- Radix Sort" << std::endl;
 
     std::cout << "\n";
     std::cout << "Enter your Choice:    ";
@@ -56,6 +59,12 @@ int main()
     else if (input == 6)
     {
         HeapSort placeholder(1000, window);
+        ElVis elvis(window, placeholder);
+        elvis.run();
+    }
+    else if (input == 7)
+    {
+        RadixSort placeholder(1000, window);
         ElVis elvis(window, placeholder);
         elvis.run();
     }

@@ -28,6 +28,7 @@ ElVis is a C++ project aimed at visualizing various algorithms using the SFML (S
    ```
 2. Create a build directory
    ```shell
+   cd ElVis
    mkdir build
    cd build
    ```
@@ -54,7 +55,7 @@ ElVis is a C++ project aimed at visualizing various algorithms using the SFML (S
 - Selection Sort ✓
 - Insertion Sort ✓
 - Heap Sort ✓
-- Radix Sort 
+- Radix Sort ✓
 ### Pathfinding Algorithms
 - Breadth-First Search (BFS) NYI
 - Depth-First Search (DFS)

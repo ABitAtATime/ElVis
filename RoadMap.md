@@ -19,7 +19,7 @@
     - [o] Quick
     - [o] Selection
     - [o] Insertion
-    - [ ] Radix Sort
+    - [o] Radix Sort
     - [o] Heap Sort
  - Pathfinding
     - [ ] BFS

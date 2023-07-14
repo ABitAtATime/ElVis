@@ -14,4 +14,4 @@ class HeapSort : public Sorting
         void heapSort();
 
 };
-#endif HEAPSORT
+#endif 

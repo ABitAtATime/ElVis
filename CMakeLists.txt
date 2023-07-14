@@ -16,6 +16,8 @@ set(SOURCES
     src/algorithm/sorting/insertionsort.cpp
 
     src/algorithm/sorting/heapsort.cpp
+    src/algorithm/sorting/radixsort.cpp
+
 
     src/visualizer/sortvis.cpp
 )

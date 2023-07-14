@@ -1,9 +1,9 @@
 #include "Algorithm/Sorting/insertionsort.h"
 #include <iostream>
 
-void InsertionSort::insertionsort(int n)
+void InsertionSort::insertionsort()
 {
-    int i, key, j;
+    int i, key, j , n=mdataSize ;
     for (i = 1; i < n; i++)
     {
         key = mdata[i];
@@ -22,5 +22,5 @@ void InsertionSort::insertionsort(int n)
 
 void InsertionSort::run()
 {
-    insertionsort(mdataSize);
+    insertionsort();
 }
